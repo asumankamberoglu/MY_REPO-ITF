@@ -1,0 +1,452 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "406f2981",
+   "metadata": {},
+   "source": [
+    "<img src=\"https://docs.google.com/uc?id=14xeXxFrVRjvOoUYWn_GuyE-v84wVzrqr\" class=\"img-fluid\" alt=\"CLRWY\" width=\"400\" height=\"200\">"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "22263af8",
+   "metadata": {},
+   "source": [
+    "<h1><p style=\"text-align: center; color:darkblue\">Python In-Class, <br>21 April 2022</p><h1>"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "3c9c9d8d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"hello\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "82de8165",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello world\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"hello world\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "dc006a63",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "EOL while scanning string literal (842549119.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Input \u001b[1;32mIn [3]\u001b[1;36m\u001b[0m\n\u001b[1;33m    print(\"hello world')\u001b[0m\n\u001b[1;37m                        ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m EOL while scanning string literal\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"hello world')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "5641beb6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "çiftle başladım çiftle bitirdim\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"çiftle başladım çiftle bitirdim\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "0f36c50e",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "EOL while scanning string literal (2073767124.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Input \u001b[1;32mIn [5]\u001b[1;36m\u001b[0m\n\u001b[1;33m    print(\"benim adım Edwin,\u001b[0m\n\u001b[1;37m                            ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m EOL while scanning string literal\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"benim adım Edwin,\n",
+    "      ben sizi seviyorum\n",
+    "      sizde huzur buluyorum\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "58f66ece",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " \n",
+      "bunun\n",
+      "arasına\n",
+      "istediğim kadar\n",
+      "satır yazıp\n",
+      "uzunca çıktı alabileceğim gibi\n",
+      "istediğim yerde de kullanabilirim\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"\"\" \n",
+    "bunun\n",
+    "arasına\n",
+    "istediğim kadar\n",
+    "satır yazıp\n",
+    "uzunca çıktı alabileceğim gibi\n",
+    "istediğim yerde de kullanabilirim\n",
+    "\"\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "18bb0527",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "bu benim ilk dersim.\n",
+      "çok heyacnlıyım\n",
+      "karşımda pırlanta gibi insanlar var\n",
+      "o yüzden çok iyi hissediyorum\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"\"\"bu benim ilk dersim.\n",
+    "çok heyacnlıyım\n",
+    "karşımda pırlanta gibi insanlar var\n",
+    "o yüzden çok iyi hissediyorum\"\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "9a18ce4c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hello world\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"\"\"hello world\"\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "1aa96e4f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " tek satır\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(''' tek satır''')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "411be3b3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "123456678890ğ**_*?-+*/&%/()/!'^+%54%^%'''\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"\"\"123456678890ğ**_*?-+*/&%/()/!'^+%54%^%'''\"\"\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "78ebcec0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ahmet'in kedisi\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Ahmet'in kedisi\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "16a8d6e4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Sevim\"in kedisi\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Sevim\"in kedisi')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "3d0dccd4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "41\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(41)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "2af3c940",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "41\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"41\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "a18dc8c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(3, 4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "cee9f2bb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3 4 11.4 ali deli veli\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(3, 4, 11.4, \"ali\", \"deli\", \"veli\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "aca96a13",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "birinci satır\n",
+      "\n",
+      "üçünc satır\n",
+      " \n",
+      "işte bu da dördüncü satır\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"birinci satır\")\n",
+    "print()\n",
+    "print(\"üçünc satır\")\n",
+    "print(\"\")\n",
+    "print(\"işte bu da dördüncü satır\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "f615e221",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "EOF while scanning triple-quoted string literal (878951140.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Input \u001b[1;32mIn [21]\u001b[1;36m\u001b[0m\n\u001b[1;33m    print('''')\u001b[0m\n\u001b[1;37m               ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m EOF while scanning triple-quoted string literal\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('''')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "39ee6498",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " \" \n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"\"\" \" \"\"\" )"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "f42f746f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "''\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"''\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "1eff3c1c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\"\"\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('\"\"')"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.11"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
