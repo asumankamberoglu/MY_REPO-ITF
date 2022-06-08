@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.ANA{
+   
+    background-color: white;
+    width: auto;
+    margin: auto;
+
+}
+.TOP{
+    /* background-color: goldenrod; */
+    background-image: url("https://wallpapers.com/images/high/sky-image-7tvuv6iy6wpv9th7.jpg");
+    width: auto;
+    height: 120px;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.SOL{
+    background-color: white;
+    width: 20%;
+    height: 500px;
+    float: left;
+}
+.ORTA{
+    background-color: white;
+    max-width:  60%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    height: 500px;
+    float: left;
+}
+.SAĞ{
+    background-color: white;
+    font-size: 20px;
+    width: 20%;
+    height: 1000px;
+    float: right;
+}
+
+.BOTTOM{
+    /* background-color: darkgrey; */
+    /* background-image: url("https://c1.wallpaperflare.com/preview/725/423/706/sky-blue-blue-sky-background.jpg"); */
+    width: auto;
+    height: 100px;
+    clear: both;
+    text-align: center;
+}
+/* .sol-orta{
+    width: 70%;
+    height: 250px;
+    float: left;
+} */
+#heading{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+#breaking{
+    width: 40%;
+    height: 200px;
+    float: left;
+    box-shadow:20px 0px 20px 10px pink;
+    border-radius: 10px;
+
+}
+#anabaşlık{
+    margin-left: 400px;
+}
+#anahaber{
+    margin-left: 20px;
+}
+#metin{
+    width: 60%;
+    float: right;
+    margin: 5px;
+    text-align: center;
+    text-justify: distribute;
+    padding: 5px;
+    
+}
+.sağresim{
+    width: 40%;
+    float: right;
+    height: 200px;
+    
+}
+.solresim{
+
+    width: 40%;
+    float: left;
+    height: 200px;
+}
+.solyazı{
+    width: 60%;
+    float: inline-start;
+    margin: 20px 20px 20px 20px;
+}
+
+
+/* #sıcak{
+    background-color: red;
+    margin: 20px 20px 20px 20px;
+    border: 1px double white;
+    width: 1160px;
+    border-radius: 20px; */
+
+
+
+.sıcakresim{
+    color: red;
+}
+#sondk{
+    text-align: center;
+    color: red;
+    border: 1px double red;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 15px;
+}
+#sondk:hover{
+    color: white;
+    background-color: red;
+}
+.ortada{
+    width: 20%;
+    height: auto;
+    float: left;
+    margin: 36px;
+}
+.ortada3{
+    width: 25%;
+    height: auto;
+    float: right;
+    margin: 35px;
+
+}
+li:hover{
+    font-size: larger;
+    text-decoration: underline;
+}
+#chatres{
+    width: 300px;
+    height: 200px;
+    margin: 10px 10px;
+}
+#kahootres{
+    width: 300px;
+    height: 200px;
+    margin: 10px 10px;
+}
+#Edwin{
+    width: 250px;
+    height: 200px;
+    margin: 10px 10px;
+    border-radius: 125px;
+    
+}
+h3{
+    text-align: center;
+
+}
+p{
+    margin: 5px;
+}
+#trol{
+    height: 200px;
+}
+/* #solresimm{
+    height: 200px;
+} */
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    
+}
+.foto{
+    float: left;
+    width: 50px;
+}
+.isimler{
+    float: left;
+    width: auto;
+    font-size: 25px;
+}
+.isimler2{
+    float: left;
+    width: auto;
+    font-size: 25px;
+}
+.sağekip{
+    text-align: left;
+    margin-left: 20px;
+
+}
+.solekip{
+    text-align: left;
+    margin-left: 15px;
+}
+.kıç{
+    font-style: italic;
+    font-size: 25px;
+}
+.haberler{
+    font-size: 17px;
+}
+.yorum{
+    text-align: center;
+}
+avatar:hover{
+    border: 1px solid red;
+}
+#kalp{
+    width: 25px;
+    height: 25px;
+}
+#dipnot{
+    margin 20px;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+#not{
+    margin: 20px;
+    padding: 20px;
+    color: red;
+}
