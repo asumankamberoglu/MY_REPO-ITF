@@ -1,0 +1,32 @@
+adım adım Gıt
+	<bır 1.klasor olustur. ıcıne gır. burda bır tane daha 2.klasor olustur.
+	<1.klasore gerı gel. bu klasoru gıt ıle ırtıbatlandıracagımız ıcın bunun ıcındeyken "git init" komutunu yaz.
+	<boylece>>>1.klasor altında, bırcok dosya-kalsor barındıran gızlı bır ".git" adında bır klasor olusutrdun (klasorde ne var ne yok ıcın >>"ls -al")
+	<deponun ıcınde dosya "modified-staged-committid" 3 ana sekılde bulunabılır.
+	(1.The working tree---2.The staging area---3.Repository (The Git directory))
+	<simdi bı dosya olusturup bunun tum asamalarıyla repositorye gonderelım-yerlestırelım
+	<1.klasorun ıcındeyken touch ıle 1.dosya ısımlı bı dosya olustur.
+	<yukarıda yapmısıtık. bu klasorun ıcındeyken "git init" komutu yaparsak ".git" dıye bır klasor olustururuz.
+	1.klasorde ne var-yok bakmak ıcın ls -al komutu yazılır. daha sonra dosya durumu git status komutuyla kontrol edılır
+	<git status>>>  komutuyla, dosyalarımızın durumuna bakıyoruz. 
+	kırmızı ıle yazılı olan dosyalar, 
+	an ıtıbarıyle calısma alanında duruyor demektır.
+	yanı henuz gıt ile ırtıbatlandırılmamıs vazıyette beklıyor.
+	< ıste calısma alanından hazırlama alanına dosyamızı gondermemız ıcın de;
+ 	bu sefer "git add dosyaadınıyazınız" >>>eger tum dosyaları hazırlama alanına gondermek
+ 	ıstıyorsak "git add ." seklınde komutu yazacagız.
+	<git add 1.dosya dedım ve ıslemımın olup olmadıgını yıne 
+	< git status>>>  komutuyla bakıyoruz. dıkkat edın bıraz once kırmızı yazan dosya artık yesıl renkte yazıyor.
+	<<calısma alanından hazırlama alanına getırdıgımız bu dosya-ları artık local repoya gonderebılırız.
+	bunun ıcın "git commit -m "bu dosyalar ornek olarak gonderılmıstır(mesajınızı bu sekılde yazabılırsınız)" (DIKKAT: burada bu ıslemı yaptıgınızda tum dosyalar 
+	repository e aktarılacaktır. tek bir tane atılma sansı yok)
+	<< bu komutu da yaptıktan sonra basarılı olup olmadıgımızı gormek ıcın yıne 
+	< git status>>>  komutunu kosturalım. "...nothing to commit working tree clean" 
+		seklınde mesajı goreceksınız. calısma alanından temızlenecek bısey yok dıyor
+		neden? cunku orayı temızledık.ılk olarak hazırlama sonra da repository alanına gonderdık.
+	pekı bı dosyayı staging area(ındex)-hazırlama alanına attık-gonderdık ama sonra gerı calısma alanına gondermek ıstersek;
+		<"git rm --cached" veya "git restore --staged" komutlarından bırısıyle yapabılıyorum.
+		<bunu yaptıktan sonra gıt status ıle yıne yesıle donmus olan dosyalarımızın tekrar kırmızıya dondugunu goreceksınız.
+	pekı en son repository e atmıs oldugumuz dosyayı gerı gondermek ıstersek; ozaman 
+		<"git checkout **********" komutuyla degısıklık yaparken bıze verılmıs uzantının ılk 4-6 hanesını gırıp enterlamamız gerekıyor.
+	bu arada <git log> komutuyla yapılan degısıklıklerı goruntuleyebılıyoruz.
