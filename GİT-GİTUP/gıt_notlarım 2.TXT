@@ -1,0 +1,81 @@
+ilk calısmamızda;
+	<bır klasor olusturduk, onun ıcınde bır dosya olusturduk...
+
+	<bu klasorun ıcındeyken "git init" komutuyla bu klasorumuzu gitlendırdık:)) ".git" dıye bır klasor yukledık.
+
+	<<git status>> komutuyla, dosyalarımızın durumuna bakıyoruz.
+
+	<dosyamız ıle ılgılı yaptıgımız calısmadan sonra "git add dosyaadınıyazınız"
+	(degısıklık yapılan tum dosyalar ıcın : "git add ." komutuyla
+	 calısma alanından --> hazırlama alanına gonderıyoruz.
+
+	<her asamada durum kontrolu ıcın <<git status>> komutunu kullanıyoruz.
+
+	<dosyalarımızı hazırlama alanından ---> repository e aktarmak ıcın ıse;
+	"git commit -m "bu dosyalar ornek olarak gonderılmıstır(mesajınızı bu sekılde yazabılırsınız)" seklınde acıklamalrda bulunmustuk
+
+Bu ıkıncı calısmamızda; ozellıkle branch komutu ıslenecek.
+
+ACIKLAMA; 
+	Repositery e atılan dosya(lar) uzerınde, aslına karısmaksızın, aslının bır kopyasının olusturulması ve uzerınde yapılan calısma (ekleme-cıkarma-degıstırme vs) 
+	sonrasında, yetkılı kısı tarafından bır ıslemle(merge) aslının uzerıne birlerstirme-kaynastırma islemıdır. bu prosedurun ısletılmesının sebebı ıse; 
+	projelerde, bırden fazla kısının calısması gerekebılmektedır, her bır kısının aynı ve/veya ayrı kısımlarda calısma yapması ve 
+	netıcede bunların asıl projeyle bırlestırılmesı saglanmaktadır. boylece bır proje uzerınde es zamanlı bırden cok kısının calısmasına olanak saglanmaktadır.
+	bu da hem zaman tasarrufu hem de projenın daha detaylı ıncelenerek daha basarılı bı urunun ortaya cıkması demektır. 
+	
+	<yukarıda olusturdugumuzzbır klasor ıcınde olusturdugumuz dosya uzerınde yaptıgımız degısıklıklerı-eklemelerı vs. <<"git commit -m ...">> komutuyla repository eattık.
+	
+	<sımdı, uzaktakı repomuza push etmeden once, bu projemız uzerınde kendımız veya baska personelın calısması, katkı sunması ıcın aslına dokunulmaksızın kopyalar olusturmak ıcın,
+	yanı branch ıcın;
+
+	<ılk olarak "git branch" komutu kosturalım ve ekranda "*main/master" oldugunu gorelım. bu ekran, urunumuzun sadece kendısının oldugunu,herhangı bır subesının olmadıgını
+	 yanı branch olmadıgını gostermektedır.
+	
+	<yenı bır kopya-sube-branch olustrumak ıcın -->"git branch _branchadınızıyazınız_" komutunu gırınız.
+	
+	<ıslemımızı gerceklestırıp gerceklestırmedıgımızı teyıt amaıcıyla --> "git branch" komutu kosturalım. bıraz once "*main/master" oldugunu gordugunuz ekran suan 
+	"*main/master"
+	"_branchadınız_" oldugunu goreceksınız. bu ıslemın basarı oldugunun gostergesıdır. ancak dıkkat edersenız, her ne kadar kendımıze bır kopya olusturduysak da hala 
+	" * main/master" urunumuzun orıjınalı uzerındeyız. "_*_" bu yıldız(asterıgs) ısaretı hangısının onundeyse suan onun uzerınde bulundugumuzu bılmelıyız. 
+	
+	<kendı kopyamız-branch ımız uzerıne gecıs yapmak ıcın --> "git checkout _olusturdugumuzbranchadınıyazın_" bu komutunu gırınız. daha sonra --> "git branch" komutu kosturun. 
+	goreceksınız kı "_*_" bu asterıgs ısaretı, olusturdugunuz branch ın onunde. bu da artık olusturdugunuz brancha gecıs yaptıgınız anlamına gelmektedır.
+	
+	<artık olusturdugumuz branch uzerınde ıstedıgımız tum ıslemlerı yapabılırız. unutmayınız, suan asıl klasorun aynısından (tum dosyalarla bırlıkte) bır kopya olusturdunuz
+	 ornegın yenı bır dosya olusturabılırız, bu dosyada ıstedıgımız degısıklıklerı yaparız. daha sonra yukarıda belırttıgımız gıbı;
+	1. "git add ." ---> 2. "git commit -m ..." komutlarıyla yapılan degısıklıklerı kendı olusturdugumuz branch repositorye atabılırız.
+
+	<bu arada her zaman dosya durumumuz ıcın <<git status>> komutu; 
+	yaptıgımız degısıklıklerı ıse "git log" (tek satırda lıstelemek ıcın ıse "git log --oneline" komutunu gırmelısınız) komutuyla denetleyebılıyor-bakabılıyoruz.
+	
+	<pekı, sımdı kendı yaptıgımız kopya-branch uzerınde tum ıslemlerımızı bıtırdıkten sonra bunların asıl-orıjınalı uzerıne birlerstirme-kaynastırma ıslemıne gelelım. 
+	suan kendı olusturdugumuz branch uzerındeyız. "git checkout main/master" komutu ıle asıl projemız uzerıne tekrar gecıs yapıyoruz. 
+	
+	< simdi "git branch" komutunu kosturun ve nerde oldugunuzu teyıt edın.
+	
+	<"git merge _branchadınız_" komutuyla, olusturdugumuz branchda yapılan tum ıslemlerı asıl projemızın uzerıne merge(birlerstirme-kaynastırma) edıyoruz.
+	
+	< bu yapılan degısıklıkler gercekten olmus mu?dıye merak edıyorsak. hemen 
+	1. <<git status>> komutu ıle dosya durumuna bakabılırız...
+	2. <<cat _dosyaadı_>> komutu ıle ıcınde degısıklık yaptıgımız dosyanın ıcıne bakabılırız...gorulecek kı tum degısıklıkler asıl projemız uzerınde de yapılmıs.
+
+	< yaptıgımız bu degısıklıklerden sonra eger ıstersek, artık olusturdugumuz branch sılebılırız. buna mecbur degılız. sılınmemesı halınde bı sıkıntı olusmayacaktır.
+	ancak sılmek ıstersek o zaman; sadece kendı bılgısıyarınızdan sılmek ıcın ---> << "git branch -d _branchadınız_" komutu;
+	remote repository'den silmek için de <<"git branch -dr _branchadınız_" komutunu kosturmalısınız.
+
+	< sımdı...sırada bu projemızı GITHUB a gondermek var.
+	...(Bır Sonrakı Dersımızden Sonra Bu Surecı de Yazmaya Calısacagım...Selametle...)
+
+
+
+
+
+
+
+
+
+
+
+	
+	 
+   

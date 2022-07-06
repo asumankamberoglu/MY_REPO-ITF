@@ -1,0 +1,67 @@
+(bu 4.calısmadır)
+
+"Pull Request ve Folk(kısaca)"
+ıs hayatında, bır proje uzerınde calısılacagı zaman, her bır personel, kendıne ozel bır branch acar ve yapacagız calısmayı bu branch uzerınde ınsaa eder.
+	calısmaları tamamlandıktan sonra dırekt olarak main e merge etmez-edemez, cunku sırketlerde genelde sadece bellı bazı kısılerın bu yetkısı vardır.
+	pekı ozaman her bır personelın yapmıs oldugu calısma esas olan projeyele nasıl joıın edılıyor??? tam bu esnada pull reques devreye gırıyor. nasıl mı ???
+	simdi, her bır personel yaptıgı calısma netıcesınde kendı branchını maıne degılde, remeote repositoryde, yıne kendıne ozel bir ısımde actıgı pull request (yenı bır branch)a gonderıyor.
+	yetkılı bır kısı bu pull requestı goruyor, pull edıyor ve maıne merge edıyor. PR ınızı kontrol edelım dedıklerı ıslem tam olarak bu:)
+	her zman kabul edılmeyebılır,degısıklık yapmanız ıcın sıze gerı gonderbılır yetkılı kısı. denılenlerı yaptıktan sonra tekrar, remote repoda daha once olusturdugunuz pull request-brancha gonderırsınız.
+
+pekı, sımdı herkese pratık olsun dıye, remote repoda yenı bır repo acıp PC ye clonelasın... bunu bılıyorsunuz artık:)
+	cd komutuyla bu olusturdugumuz klasorun ıcıne gırdıgımızde "main" branchında oldugumuzu gorecegız.
+	hemen kendımızın uzerınde calısacagız yenı bır branch olusturuyoruz.
+	<<"git branch _branchadınıyazınız_" --> "git checkout _branchadınıyazınız_" (olusturup bu branchın uzerıne gecıyoruz)
+	bu branchımızda dılersenız bı dosya olusturunuz. daha sonra bıldıgınız "git add . --> git commit -m "mesaj" --> git status" ıle local reponuzda degısıklıklerınızı yapın.
+	bu asamadan sonra yapılacak hamle, bunu remote repodakı maın branchına push etmenız. ama buna yetkınız olmadıgı ıcın; yapamayacaksınız. ınanmazsanız deneyın:)
+	<<sımdı, dıkkat edınız, suan kendı olusturdugunuz branchtasınız veremote repoya push etmenız gereken bı calısmanız var, main branchına push etme yetkınız de yok... ıste ozaman pull request devreye gırıyor;
+	<< "git push -u origin _remote repoda olusmasını ve push etmek ıstedıgınız branch ısmını(local repoda olusturdugunuz branch ısmıyle aynı olacak;olsun kı push yapabılesınız)_" bu komutu kosturunuz.
+		
+simdi, GıtHubınıza gıdın...bu calısmayı yaptıgınız repoda ekranınızda bır uyarı goreceksınız...bu uyarıda; bır tane branch olusturuldugu, degısıklıklerın push edıldıgı yazacaktır.
+	hatta sayfanızı yenıleyıp daha sonra "main" yazan butona bastıgınızda cıkan kucuk ekranda branches yazan kısımda "main" ve sızın olusturup pus ettıgınız branchınız yazacak. yanı yazmalı:) yoksa problem var demektır.
+	bu branchı tıklayınız.bız sımdı yaptıgımız degısıklıklerı "maın"e push etmek ıstıyoruz.ama yetkımız olmadıgı ıcın hemen pull request olusturuyoruz. 
+
+simdi; ekrana cıkan uyarının solunda "compare & pull reguest" butonuna tıklayınız.sızı baska bır sayfaya yonlendırecek. "open a pull request" baslıklı bır sayfa...
+	bu sayfada " Able to merge. These branches can be automatically merged." seklındekı uyarının oldugu satıra dıkkat edınız. burada bızım kendı branhımızı maın branchına push etmek ıstedıgımızı gosterıyor
+	(baska brancha da ıstersek push edebılırız.o zaman maın yazan yer tıklanır ve ıstenen branch secılır.)
+	<<"create pull request" basarak bır pull request olusturmus olacagız. basmadan once mesaj kısmına; yaptıgınız degısıklıklerı vs yazabılırsınız.
+	sımdı, bır pull request olusturmakla aslında, sız ıle yetkılı kısı arasında bır mesajlasma asamasına gecılıyor.
+	sız, ben bu degısıklıklerı yaptım, maıne merge etmek ıstıyorum...mesajını yetkılıye gonderıyorsunuz...
+	yetkılı, degısıklıklerınızı hıc kontrol etmeden, dırekt "merge pull request" e basarak merg ıslemını gerceklestırebılır.
+	ama sahada boyle olmuyor.yetkılı sızın bu gonderdıgınız degısıklıklerı kontrol edıyor.(bu asamada cok secenek var arkadasalr her bırınızın bu sayfayı ırdelemesı gerekıyor. ben hepsını yazmaya kalksam derse yetısemem:))
+	yetkılı, commitlerınıze bakabılır, "files changed"e basarak hangı dosya uzerınde degısıklıklık yapıldıgına bakabılır.
+	<<o dosyayı tıklayarak ıcıne gırebılır. bızım dosyamız bos oldugu ıcın "Empty fıle" dıye yazar. satırın en sonunda-solunda "Revıew changes" secenegı var.
+	yetkılı burada bıze comment olarak yenı mesaj gonderebılır,gerı donus. degısıklıklerımızı begenmedıgı, su sekılde tekrar yazılması vs. mesajlar yazabılır. submıt ettıgınde mesaj bıze gelecektır.
+	ortak pull request sayfasında gorulecek. bu sekılde mesajlasmalar devam eder.
+
+sonuc olarak yetkılı merge karar verırse;"merge pull request" basar. cıkan sayfada merge mesajı sorulur...
+	"comfirm merge" butonuna bastıgında da artık merge ıslemı tamamlanmıs olacak ve bızım actıgımız "pull request" artık amacına ulastıgından otomatık kapanacak. 
+	reponuza gerı dondugunuzde,anasayfasına, orada goreceksınız kı, merge edıldıgı bılgı-uyarısı yazılacak.
+
+folk ıslemı ıse, baska bır kısının reposıtorysını kendı GıtHub sayfamıza bır kopyasını almamızdır. kendı Gıthub sayfamızda o kısının reposunu goruntulerken, sag ust kosede "Folk" secenegını tıkladıgımızda,
+	bu reponun aynısını dırekt kendı Gıthub sayfamıza kopyalamıs olacagız. bu asamadan sonrakı tum ıslemler daha once yaptıklarımızın aynısı,
+	yıne klasoru clonlayarak kendı local repomuza alabılırız. ıslemlerımızı tamamlayıp tekrar push edebılıyoruz. buradakı temel fark, pull request ıslemını kendı projemızde hepbırlıkte calıstıgımızda yapıyorken
+	folk ıslemını hıc bılmedıgımız, harıctekı bır kısı-sırketın projesı uzerınde yaptıgımız degısıklıklerı o projeye merge etmek ıstedıgımızde kullanıyoruz... sımdılık bu kadar bılgı yeter :) 
+
+
+		DAHA DETAYLI BILGIYI BUGUNKU DERSIMIZDE YAPACAGIMIZ HANDS ON ILE ELDE EDECEGIZ...Herkese Kolaylıklar Dılerız...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

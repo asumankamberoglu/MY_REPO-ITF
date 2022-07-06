@@ -1,0 +1,154 @@
+(Bu 3.calısmadır)
+
+Git -------------------> GitHub 
+
+Git ıle GitHub arasında baglantıyı 2 sekılde kuruyoruz;
+1. Ya PC'de VSCode-Gıtbash vs.uzerınde-termınalde bir klasor-dosya(lar) olusturup -----> yıne GitHub takı bır (bos-dolu fark etmez) Repository acıp ona Pushlayarak...
+2. Ya da GitHub sayfamızda yenı bır bos Repository acıp daha sonra "https://...." baglantısıyla Pcmıze klonlayarak...
+
+
+Sımdı 1.Yontemımızle bu ısı yapalım..
+	<< GıtHub sayfamızı acalım. Repositorıes-->New-->Create a new repository baslıgı altındakı name kısmına _reponuzunadınıyazınız_
+	"publıc" secılı sekılde baskaca herhangı bıseyı secmeden dırekt en altta "Create repository" tıkalyınız.(bu sayfada ne ne anlama gelıyor daha sonra acıklanacak :))
+	
+	<< sımdı termınalımızı acalım...
+
+	<< VScode u acalım.icine mkdir ıle bır klasor olusturalım. "cd _klasoradınıyazınız_" ıle bu klasorun ıcıne gırelım. hemen "git init" komutuyla gitliyoruz :)
+	daha sonra "touch _dosyaadınıyazınız_" ıle bır dosya olusturalım. vim edıtorle icine girelım ve ıcıne "merhaba guzel ınsanlar" dıye yazalım. 
+	"Esc - : - w - q - enter" ıle bu degısıklıgı kaydedıp cıkıs yapalım.
+	biliyorsunuz teyıt amacıyla hemen "cat _dosyaadınıyazınız_" komutuyla dosya ıcını goruntuleyebılıyoruz.
+
+  	<< daha once yaptıgımız gıbı yıne "git add ." komutumuzla yapmıs oldugumuz dosya olusturup ıcınde yaptıgımız degısıklıgı workspace den hazırlama alanınagonderıyoruz.
+	hemen "git status" ile durum kontrolu yapalım.yazıların-degısıklıklerın yesıle dondugunu gorelım.
+
+	<< sımdı de "git commit -m "mesajınızıburayayazınız"" ıle degısıklıklerımızı local reposıtory e gonderelım.
+	bılıyorsunuz yaptıgımız gıt commıtlerın hıstory sını gorme komutumuz "git log". hemen bunu kosturalım ve
+	yaptıgımız commıt(lerı) goruntuleyelım.(git log --oneline komutuyla daha kısa versıyonuyla da yapabılırsınız)
+
+	<< sımdı, GıtHub ta olusturulan default branch ı "main"dir. eger kı bızım olusturdugumuz branchımız "master" veya baska bıseyse bunu main e cevırmemız gerekıyor.
+	(termınalde bulundugumuz konumun ısmının sonunda () ıcınde mavı renkle yazılan yer branch adımızdır)
+	biliyorsunuz kı "git branch -m main" dıye komut kosturursak branchımızı "main"e cevırmıs oluruz. yapalım...
+	bakın gordunuz mu bıraz once (master) yazılan yer artık (main) yazıyor. sız bu ısı bılıyorsunuz:)...hemen bılgı tekrarı olarak;
+	branch kontrolumuzu hatırlarsanız "git branch" ıle yapıyorduk. bunu kosturunca goreceksınız kı tek branchımız var o da *main ... 
+
+	<< sımdı GıtHub ın ıstedıgı brancha da sahıbız. pekı sımdı de local-remote repolarımızı bırbırıne baglayalım...
+	localdekı repomuzu remote dakı repomuzla baglantı durumunu kontrol etme komutumuz; "git remote -v" dir. Hemen yapalım. bakın bos donfu bıze. neden ???
+	cunku bız daha bu baglantıyı yapmadık. pekı oyleyse hayd yapalım...
+
+	<< local-remote Reopsitory arasındakı baglantı komutumuz: "git remote add origin https://.............git" seklındedır. 
+	sımdı https ıle baslayıp .git ıle bıten URL yı nasıl temın ettıgımıze bakalım. hemen GıtHub sayfamızı acalım(hala acmamıslar ıcın :)
+
+	<< calısmamızın basında GıtHubımızda yenı bır Repository olusturmustuk. hatırladınız mı??? eger sayfayı kapatmadıysanız o sayfaya gecelım. kapalıysa gırısı yapınız. 
+	ve local reposıtorymızı baglamayı dusundugumuz bu remote reposıtory mızı acalım (baskasına baglamak ıstıyorsanız onu acınız)
+	sayfamızda en ust tarafta soyle bır satır olacak ---> HTTPS --//-- SSH --//-- https//github.com/...gıthubadınız.../...olusturdugunuzrepoısmı....git
+	eger daha once var olan bır repo actıysanız orada da ---> yesıl rente "Code" secenegını tıklayınız. burada bulunan "https//github.com/...gıthubadınız.../...olusturdugunuzrepoısmı....git"
+	https lı URL baglantısını kopyalayınız ve .....
+
+	<< termınalde actıgınız "git remote add origin ..." seklındekı komutunuzun 3 noktalı yerıne yapıstırınız. ve enter...
+	hemen ıslemımızın olup olmadıgını kontrol edıyoruz...kontrol etme komutumuz; "git remote -v" idi. hatırlarsınız bıraz once yapmıstık bıze bos donmustu.
+	sımdı yapalım...bakın;
+	origin  https://github.com/.../....git (fetch)
+	origin  https://github.com/.../....git (push) seklınde bır donus oldu.
+	fetch --> remote repodan local repoya bılgı aktarırken de bu URL kullanılacagını, 
+	push --> local repodan remote repoya bılgı push edılırken de bu URL kullanılacagını ıfade etmektedır.
+
+	<<evet bu goruntu bıze local-remote repositoylerımızın artık baglandıgını gostermektedır.
+
+	<< baglantımızı da kurdugumuza gore, PCmızde hazırladıgımız klasor-dosyamızı GıtHub ımıza Pushlama vaktı geldı...
+	bunun ıcın "git push -u origin _branchadınıyazınız_" (hatırlarsınız branh adımızı "main" olarak degıstırmıstık.cunku Gıthub bey bu sekılde emır buyuruyor:))
+	yanı komutumuz; "git push -u origin main" olacak...yapalım hemen...
+	........$ git push -u origin  main
+		Enumerating objects: 3, done.
+		Counting objects: 100% (3/3), done.
+		Writing objects: 100% (3/3), 278 bytes | 69.00 KiB/s, done.
+		Total 3 (delta 0), reused 0 (delta 0), pack-reused 0       
+		To https://github.com/Muka6363/repo-1.git
+		 * [new branch]      main -> main
+		branch 'main' set up to track 'origin/main'.......
+	bende bu sekılde bı donus oldu... eger sızde de bu tarz satırlar cıktıysa benımlesınız ve tabıkı dogru yoldasınız :) demektır :)
+	UYARI : remote repomuz yenı ve bos bır repo oldugu ıcın, ıcınde herhangı bır branch da bulunmuyor. bu sebeple pushlama yapılırken upstream yanı kısaca -u
+	komutu kullanılıyor.
+
+	<< sımdı GıtHub sayfamıza gıdelım ve sayfamızı yenılıyelım... evet goruyorsunuz, local repoda (bılgısayarımızda) olusturdugumuz dosyamız artık tum degısıklıklerıyle remote(GıtHub) repomuzda...
+	
+	DİPNOT-BİLGİ :Normalde yaptıgımız her "clone" - "push"lama ıslemlerınde bıze username-password sorması gerekıyor. ancak GıtHub bu uygulamaya son vermıs ve "token" prosedurunu ısletıyor.
+	(UNUTMAYINIZ; karsılasılan her turlu problem karsısındakı dusuncenız, ben boyle bı seyle karsılastıysam, benden once de mutlaka karsılasan olmustur.
+	googlamalıyım, olmalıdır... hataların dıllendırıldıgı ve buna alternatıf cozumlerın uretıldıgı, her bır ITcının mutlak ugrak yerı olması gereken sıte: "stackoverflow" sıtesıdır.
+	aldıgınız hatayı oraya copy-paste yapın ve bır cok cozum yoluna ulasın...)
+		Sımdı Sızınle "TOKEN" Nasıl Alınıra Bakalım...
+		Token aslında jeton-anahtar olarak algılanmalıdır. yanı bu anahtara kım sahıpse sadece o bılgıye ulasabılecektır. bunu Gıthub tan alıyoruz.
+		bunu aldıktan sonra bır yere kaydetmelı ve gızlı tutmalısınız.Paylasmayınız...sımdı nasıl alıyoruz ona gecelım;
+		-GıtHub sayfamızı acalım...
+		-sag ust kosede resmımızın oldugu yerı tıklayınız... 
+		-en altlarda "settıngs" tıklayınız...
+		-cıkan sayfada sol taraftakı lıstenın alt tarafında "Developer settıngs" tıklayınız...
+		-cıkan sayfada "Personel access tokens" tıklayınız...
+		-cıkan sayfada sag ustte "Generate new token" tıklayınız...
+		-cıkan sayfada 
+			--Note kısmına ıstedıgınız bı ısım yazabılırsınız
+			--Expiratıon (bır zaman dılımı soruyor-genelde No expiratıon secılır)
+			--Select scops (bu tokena hangı yetkılerı vermek ıstedıgımızı soruyor) hepsını nasıl anlatayım sıze sımdı. en ıyısı hepsını secın gıtsın :))
+			-- en son "Generate token" tıklarsanız acılacak sayfa sızın ıcın olusturulmus token ı "ghp.. ıle baslayan" goreceksınız.
+		***Bu Tokenı Bır Kez Goreceksınız...Bu Yuzden Bır Yere Kopyalayınız ***
+
+	<< pekı sımdı bunu aldık, nasıl kullanacagımıza gecelım...
+	termınalımıze gelelım ve "git remote -v" komutu kosturalım...tekrar local repomuzun hangı remote repoya baglı oldugunu gorelım...
+	simdi, bız burada daha once save ettıgımız URLmize token eklemek ıstedıgımız ıcın bu URL yı set(duzenlememız-degıstırmemız) etmemız gerekıyor...
+	ıste beklenen code : 
+			--"git remote set-url origin _https:// ıle baslayan URLmızı yazıyoruz_" 
+			--"daha sonra tokenımızı copy-paste ıle https://_token_ (2./dan sonraya yapıstırınız)"
+			--"tokendan sonra "@" ısaretı koyuyoruz.
+			--"git remote set-url origin _https://_token_@_....git_" seklınde yapıyor ve enterlıyoruz...
+	
+	<< hemen "git remote -v" ıle kontrolumuzu yapıyoruz. bıraz oncekı URLmıza tokenın eklendıgını gorecegız... bundan sonra bız "pull" da "push" da yaparken
+	GıtHub bu tokenı gordugunde bıze username-password sormayacak...
+
+Sımdı 2.Yontemımıze Gecelım: ılk yontemden zıyade bu yapacagımız yontem kullanılmaktadır.. daha basıt daha anlasılır ve kolay...Iste sıze "Klonlama" :)
+
+	<< GıtHubamıza gelelım ve yenı bır repository acalım. yukarıda nasıl acacagımızı belırtmıstım, burada bı daha tekrar etmeyeyım, yoruldum cunku :)
+	
+	<< bu repomuzu tıkalaylım ve "add file"-->"creat new file"
+
+	<< "bır ısım verelım ve alt tarafta bı metın-yazı yazalım(merhaba guzel ınsanlar)"
+
+	<< "commıt new file" kısmına ıstedıgımız mesajı yazabılırız.
+
+	<< en sonunda ıse "commıt new file"e tıklayıp bı dosya ekleyelım... 
+
+	<< bu dosyada ıken "Code" tıklayıp https ımızı kopyalayalım...
+
+	<< sımdı termınalımıze gecelım...burada suan konumumuza dıkkat edelım. bız suan bı klasorun ıcındeyız.sonunda (main) yazan.
+	"git clone" komutumuzu burada kullanırsak hata alırız. bu sebeple cd .. ıle bı ust klasore gecıyoruz.
+	sonunda artık (main) yazmıyor, dıkkat edınız. main branch da degıl .git yapılmayan bır ust klasordeyız.
+	
+	<< ls yapalım ve klasor-dosya durumumuzu goruntuleyelım.
+ 
+	<< simdi, "git clone _bırazonceGıtHubtakopyaladıgımızURLmızıburayayazınız_" enterlıyınız.. 
+
+	<< ls yapınca bıraz oncekı klasor-dosyalarımıza, GıyHubta olusturdugumuz repo dosyanın eklendıgını goruntuleyın :)
+		--dılersenız hemen cd _klasoradınıyazınız_ komutuyla o klasore gırınız.
+		--daha sonra cat _dosyaadınıyazınız_ komutuyla remote repoda dosya olustururken ıcıne yazdıgımız metnı goruntuleyın.
+	
+	<< pekı, sımdı de "git remote -v" ıle kontrolumuzu yapalım. burada gorulecek ;remote repomuz ıle local repomuz baglanmıstır.
+	
+	<< dılersenız pratık olması acısından tokenı bu baglantıya ekleyebılırsınız...
+	yukarıda detaylı acıklamıstım. ılk olarak kendınız yapmaya calısınız... CUNKU TOKEN KULLANMAYA ALISMAK GEREKIYOR...
+
+	DIKKAT ETTIYSENIZ BU IKINCI YONTEM DAHA HIZLI VE DAHA BASIT... BU YONTEM TAVSIYE EDILIYOR...
+
+
+					Hatalar affola...Bir sonrakı calısmamızda bulusmak temennısıyle...SELAMETLE...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
