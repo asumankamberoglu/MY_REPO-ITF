@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.Form_calısmam</title>
+  </head>
+  <body>
+    <form action="http://www.clarusway.com/action_page.php">
+      <!--actıon ıle, kullanıcı formu doldurduktan sonra gonderecegı URL adresını belırtırız, yanı web sayfası-adresı yazılmalı-->
+      <h1>M.K. FORM CALISMASI</h1>
+      Username(Kullanıcı Adı):<br />
+      <input type="text" name="Username(Kullanıcı Adı)" /> <br />
+      Password:<br />
+      <input type="password" name="password" /> <br />
+      Adınız:<br />
+      <input type="text" name="Adınız" /><br />
+      Soyadınız:<br />
+      <input type="text" name="Soyadınız" /><br />
+      Dogum Tarıhınız:<br />
+      <input type="date" name="Dogum Tarıhınız" /><br />
+      E-mailiniz:<br />
+      <input type="email" name="E-mailiniz" /><br />
+      <input type="submit" value="Submit(GONDER)" />
+      <!--input ıle forma oge gırıs yaparız. bu yapılan gırısın verı turu-cınsını type ıle belırtırız ve "name" mutlaka yazıp belırtmek gerekır, aksı takdırde o kutucuga yazılan-gırılen verı, ılgılı web adresıne gonderılemeyecektır-->
+
+      <!-- Method özelliği, form verilerinin sunucuya nasıl gönderileceğini belirlemek için kullanırız. Gönderilen formlar için iki tür yöntem vardır: GET ve POST. Method özniteliği için varsayılan değer GET yöntemidir. Method niteliği atlanırsa, form verileri GET yöntemi kullanılarak gönderilir. "GET" yöntemi ile form verilerinden gelen değerler sayfa adres alanında görünecektir. Bu nedenle hassas veriler için GET yöntemi kullanılmamalıdır. Formun çok uzun olması ve hassas veriler (örneğin şifreler) içermesi durumunda "POST" yöntemini kullanmalıyız. Form kısa ve hassas değilse GET yöntemini kullanabılırız.-->
+
+      <!--input ıle forma oge gırıs yapıp tum kutucukları doldurduktan sonra, type (verı turu) "submit" olan son bır valeu ınputu gırerız. bununla hazırlanan form yukarıda belırtılen URL (action="") adresıne gonderılır-->
+    </form>
+  </body>
+</html>

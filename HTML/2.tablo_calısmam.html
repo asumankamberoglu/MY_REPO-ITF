@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2.tablo calısmam</title>
+  </head>
+  <body>
+    <table border="15">
+      <!--bu bır tablo etıketıdır.-->
+      <!--border ıle tablomuza cerceve eklıyoruz(sayı,kalınlıgını degıstırır)-->
+      <tr>
+        <!-- her bır tr ıcınde th ıle tabloya bır baslık satırı (yatay) eklerız .-->
+        <th>bu tablomuzun 1. satırının(baslıgının) 1. bolmesıdır</th>
+        <!--th bır tablonun en usttekı baslık satırıdır.-->
+        <th>bu tablomuzun 1. satırının(baslıgının) 2. bolmesıdır</th>
+        <th>bu tablomuzun 1. satırının(baslıgının) 3. bolmesıdır</th>
+        <th>bu tablomuzun 1. satırının(baslıgının) 4. bolmesıdır</th>
+      </tr>
+      <tr>
+        <td>bu tablomuzun 2. satırının(ıcerıgın) 1. bolmesıdır</td>
+        <!--tr altındakı her bır td etıketı, 1. satır olan th nın alt satırlarını olusturur.-->
+        <td>bu tablomuzun 2. satırının(ıcerıgın) 2. bolmesıdır</td>
+        <td>bu tablomuzun 2. satırının(ıcerıgın) 3. bolmesıdır</td>
+        <td>bu tablomuzun 2. satırının(ıcerıgın) 4. bolmesıdır</td>
+        <td>bu tablomuzun 2. satırının(ıcerıgın) 5. bolmesıdır</td>
+        <!--UNUTMA: kac tane th varsa o kadar td yazmalısın kı her bır baslık (th) altında bır bılgı olabılsın. yoksa orası bos kalır-->
+      </tr>
+      <tr>
+        <td>bu tablomuzun 3. satırının(ıcerıgın) 1. bolmesıdır</td>
+        <td>bu tablomuzun 3. satırının(ıcerıgın) 2. bolmesıdır</td>
+        <td>bu tablomuzun 3. satırının(ıcerıgın) 3. bolmesıdır</td>
+        <td align="center" colspan="2">
+          bu tablomuzun 3. satırının(ıcerıgın) 4. bolmesıdır
+        </td>
+        <!--align(hızalama) nerenın ıcıne yazarsanız, o bolmenın ıcındekını saga-sola-ortaya gore sekıllendırır, yanı konumunu belırler-->
+        <!--colspan ozellıgıyle, o bolmeyı ıstedıgın kadar satır(2 onu ıfade edıyor) bolmesıne yanı sutuna yayabılırsın (colspan = YATAY)-->
+      </tr>
+      <tr>
+        <td>bu tablomuzun 4. satırının(ıcerıgın) 1. bolmesıdır</td>
+        <td>bu tablomuzun 4. satırının(ıcerıgın) 2. bolmesıdır</td>
+        <td>bu tablomuzun 4. satırının(ıcerıgın) 3. bolmesıdır</td>
+        <td align="center" rowspan="2">
+          bu tablomuzun 4. satırının(ıcerıgın) 4. bolmesıdır
+        </td>
+        <!--rowspan ozellıgıyle, o bolmeyı ıstedıgın kadar sutun(2 onu ıfade edıyor) bolmesıne yanı satıra yayabılırsın (rowspan = DİKEY)-->
+      </tr>
+      <tr>
+        <td>bu tablomuzun 5. satırının(ıcerıgın) 1. bolmesıdır</td>
+        <td>bu tablomuzun 5. satırının(ıcerıgın) 2. bolmesıdır</td>
+        <td>bu tablomuzun 5. satırının(ıcerıgın) 3. bolmesıdır</td>
+      </tr>
+    </table>
+  </body>
+</html>
