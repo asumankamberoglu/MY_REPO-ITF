@@ -1,0 +1,42 @@
+"""
+  Aşağıdaki ürünler tablosunda toptan satış fiyatları ve birimleri yer almaktadır.
+  Belirtilen satış fiyatı 1 KG içindir ve her ürün birim miktarı (ve katları) kadar satılmaktadır.
+  * Örnek: Elmanın toptan alışı "1KG = 10 TL'dir" ve "10 KG ve katları" kadar alınabilir.
+  
+    Ürün      Toptan    Birim
+    -------------------------
+    Elma      TL 10     KG 10
+    Armut     TL 12     KG 5 
+    Domates   TL 8      KG 20
+    Biber     TL 20     KG 4 
+"""
+"""
+  Soru-1: (Yukarıdaki tabloya göre)
+  * Toptan ürün satın almak isteyen bir esnafın, sermayesini ve hangi üründen kaç kilo almak istediğini isteyiniz.
+  * Sonuç olarak: Kaç KG alabileceğini ve para üstü miktarını yazdırınız.
+  * Kurallar:
+  * * Daha pahalı olan ürün, önce satılacaktır. Örnek: 20 KG biber ve 20 KG elma için önce biber satılacak, kalan paraya göre elma satılacaktır.
+  ÖRNEK:
+    Sermaye giriniz (TL): 1200
+    Elma (KG): 25
+    Armut (KG): 25
+    Domates (KG): 25
+    Biber (KG): 25
+    Sonuc: "Biber: 24 KG + Armut: 25 KG + Elma: 20 KG + Domates: 20 KG = 1140 TL * Para: 1200 TL, ParaUstu: 60 TL"
+"""
+"""
+  Soru-2: (Yukarıdaki tabloya göre)
+  * Pazarda ürün satan bir esnafın elindeki ürün miktarını ve satış fiyatını ve tahmini fire miktarını isteyiniz.
+  * Sonuç olarak: Alış, Satış, Fire ve Kar/Zarar bilgilerini hesaplayınız.
+  * Kurallar:
+  * * Fire miktarı bir defa istenecektir. (Tüm ürünlere aynı fire oranı hesaplanacaktır.)
+  * * Fire ürünlere ayrı-ayrı uyglanacaktır. (Toplam miktar üzerinden yapılmayacaktır.)
+  * * Satış birimi 1 KG'dir. Yani fire hesabından çıkan küsüratlarda fire sayılacaktır. Örneğin: "25 KG" - "%10 Fire" = 22.5 değil "22 KG" sayılacaktır.
+  ÖRNEK:
+    Elma (KG * TL): 20 * 18
+    Armut (KG * TL): 25 * 20
+    Domates (KG * TL): 20 * 12
+    Biber (KG * TL): 24 * 40
+    Fire (%): 10
+    Sonuc: "Alış-Miktar: 89 KG, Alış-Tutar: 1140 TL * Satış-Miktar: 79 KG, Satış-Tutar: 1820 TL * Fire-Miktar: 10 KG, Fire-Tutar: 132 TL * SONUÇ: 680 TL KAR"
+"""
